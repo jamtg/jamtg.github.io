@@ -1,0 +1,1064 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="android,kali," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="前言2016年陆续发行了kali 2.0和kali rolling 等最新的kali版本，那么手机怎样安装最新版的kali2.0和kalirolling呢？
+#让我们开始吧在Android上安装kali Linux系统只需要几步
+
+root你的手机
+安装以下几个神奇的软件点击下载安装
+
+
+Linux deploy 2.0
+JuiceSSH
+BusyBox
+
+（在第3步之前需要先安装busybox，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在Android手机上安装kali">
+<meta property="og:url" content="http://yoursite.com/2016/12/29/在Android手机上安装kali/index.html">
+<meta property="og:site_name" content="jam'blog">
+<meta property="og:description" content="前言2016年陆续发行了kali 2.0和kali rolling 等最新的kali版本，那么手机怎样安装最新版的kali2.0和kalirolling呢？
+#让我们开始吧在Android上安装kali Linux系统只需要几步
+
+root你的手机
+安装以下几个神奇的软件点击下载安装
+
+
+Linux deploy 2.0
+JuiceSSH
+BusyBox
+
+（在第3步之前需要先安装busybox，">
+<meta property="og:image" content="http://yoursite.com/images/home.png">
+<meta property="og:image" content="http://yoursite.com/images/i1.png">
+<meta property="og:image" content="http://yoursite.com/images/i2.png">
+<meta property="og:image" content="http://yoursite.com/images/i3.png">
+<meta property="og:image" content="http://mlapp.b0.upaiyun.com/usr/uploads/2016/10/2948357969.png">
+<meta property="og:image" content="http://mlapp.b0.upaiyun.com/usr/uploads/2016/10/4126387359.png">
+<meta property="og:image" content="http://mlapp.b0.upaiyun.com/usr/uploads/2016/10/3435956325.png">
+<meta property="og:image" content="http://mlapp.b0.upaiyun.com/usr/uploads/2016/10/4177744019.png">
+<meta property="og:image" content="http://mlapp.b0.upaiyun.com/usr/uploads/2016/10/2116566192.png">
+<meta property="og:updated_time" content="2017-03-18T11:13:05.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="在Android手机上安装kali">
+<meta name="twitter:description" content="前言2016年陆续发行了kali 2.0和kali rolling 等最新的kali版本，那么手机怎样安装最新版的kali2.0和kalirolling呢？
+#让我们开始吧在Android上安装kali Linux系统只需要几步
+
+root你的手机
+安装以下几个神奇的软件点击下载安装
+
+
+Linux deploy 2.0
+JuiceSSH
+BusyBox
+
+（在第3步之前需要先安装busybox，">
+<meta name="twitter:image" content="http://yoursite.com/images/home.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/12/29/在Android手机上安装kali/"/>
+
+
+
+
+
+  <title> 在Android手机上安装kali | jam'blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">jam'blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle"></p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/29/在Android手机上安装kali/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="jam">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="jam'blog">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="jam'blog" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                在Android手机上安装kali
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-29T15:28:30+08:00">
+                2016-12-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/android安装kali/" itemprop="url" rel="index">
+                    <span itemprop="name">android安装kali</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/12/29/在Android手机上安装kali/" class="leancloud_visitors" data-flag-title="在Android手机上安装kali">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>2016年陆续发行了kali 2.0和kali rolling 等最新的kali版本，那么手机怎样安装最新版的kali2.0和kalirolling呢？</p>
+<p>#让我们开始吧<br>在Android上安装kali Linux系统只需要几步</p>
+<ol>
+<li>root你的手机</li>
+<li>安装以下几个神奇的软件<br>点击下载安装</li>
+</ol>
+<ul>
+<li><a href="http://www.coolapk.com/apk/ru.meefik.linuxdeploy" target="_blank" rel="external">Linux deploy 2.0</a></li>
+<li><a href="http://www.coolapk.com/apk/com.sonelli.juicessh" target="_blank" rel="external">JuiceSSH</a></li>
+<li><a href="http://www.coolapk.com/apk/ru.meefik.busybox" target="_blank" rel="external">BusyBox</a></li>
+</ul>
+<p>（在第3步之前需要先安装busybox，下载busybox这个软件，安装后打开，点击”install”即可安装busybox）</p>
+<p>3.安装</p>
+<p>(建议在晚上睡觉的时候安装，因为这种联网安装的方式要等一段时间)</p>
+<ul>
+<li>你的手机连着网（而且网速不要太慢，不然你会等很长时间）</li>
+<li>打开Linux deploy，点击左上角找到setting&gt;languages，选择简体中文（如果你英语还可以，就不用设置了），然后退出，再打开，让设置生效。</li>
+</ul>
+<p><img src="/images/home.png" alt="image"></p>
+<p>然后点击右下方的箭头，按下图配置</p>
+<p><img src="/images/i1.png" alt="image"><br><img src="/images/i2.png" alt="image"><br><img src="/images/i3.png" alt="image"></p>
+<p>即<br>Containerization method:”chroot”</p>
+<p>　　发行版:”kali”</p>
+<p>　　架构:armhf</p>
+<p>　　发行版版本: rolling(也可以选sana)</p>
+<p>　　源地址:<a href="http://202.141.160.110/kali" target="_blank" rel="external">http://202.141.160.110/kali</a></p>
+<p>(这是中科大的源，比软件原来的要快很多)</p>
+<p>　　安装类型:文件</p>
+<p>　　安装路径:”安装类型”选择”文件”时，这个选项将定义系统安装在哪个镜像文件中，默认值为”外置存储/linux.img。你也可以像图中一样改成自己的想放镜像文件的路径，但文件的扩展名一定得是”.img”,比如xxx.img</p>
+<p>　　镜像大小(MB):这个选项将定义系统所在镜像文件的大小。系统安装之前将在安装目录创建一个大小为设置的镜像大小的空文件用来存放系统文件和数据(相当于新Linux系统的总磁盘空间)。建议不要用默认值，填写2048m足够了。</p>
+<p>　　文件系统:选择”自动”就好。</p>
+<p>　　用户名:这个选项为登录系统时的用户名，默认为”android”，可以随意更改。</p>
+<p>　　用户密码:这个选项为kali系统中用户的密码，可以根据自己的习惯填写。</p>
+<p>　　Privileged Users:保持默认值”root”</p>
+<p>　　DNS服务器:保持默认值</p>
+<p>　　本地化:建议保持默认值POSIX，如果有其他需求，比如ssh返回结果中文化/VNC中文化时，选择”zh_CN.UTF8”</p>
+<p>　　INIT/MOUNTS项:若有需求时可以设置，无需求可以忽略。</p>
+<p>　　允许SSH服务器启动:打开此选项</p>
+<p>　　SSH设置:保持默认</p>
+<p>　　允许图形界面启动:若有需求可以设置(如果选择安装图形界面，还需要安装VNC(自行百度)这个软件)<br>　　设置完成后，按返回键返回到应用主界面，按下菜单键，选择”安装”开始Linux系统的安装，安装过程中需要一直保持网络连接(建议在WIFI下安装，大概需要几百兆流量)。</p>
+<p>　　当看到终端输出”&gt;&gt;&gt;deploy”时，代表安装已开始:</p>
+<p><img src="http://mlapp.b0.upaiyun.com/usr/uploads/2016/10/2948357969.png" alt="image"></p>
+<p>　　当看到终端输出”&lt;&lt;&lt;deploy”时，代表安装已完成:</p>
+<p><img src="http://mlapp.b0.upaiyun.com/usr/uploads/2016/10/4126387359.png" alt="image"></p>
+<p>（在这儿，我已经安装过了，所以盗了两张图，不要奇怪为什么和你手机显示的不一样，哈哈哈）</p>
+<p>点击主界面下方的”启动”按钮可以启动新安装的系统，点击”停止”可以停止系统。<br><img src="http://mlapp.b0.upaiyun.com/usr/uploads/2016/10/3435956325.png" alt="image"></p>
+<p>至此，系统部署部分描述完毕。</p>
+<p>　　部署完毕后，我们需要用到JuiceSSH这个SSH工具来登录系统。</p>
+<p>　　成功启动系统后我们打开JuiceSSH，依次点击 “连接” - 右下角”+”按钮 进入新建连接界面:</p>
+<p>　　昵称:可随意填写，我们以”Localhost - Android”为例</p>
+<p>　　类型:SSH</p>
+<p>　　地址:127.0.0.1</p>
+<p><img src="http://mlapp.b0.upaiyun.com/usr/uploads/2016/10/4177744019.png" alt="image"></p>
+<p>　　认证:选择”新建”跳转到”新建认证”界面:</p>
+<p>　　昵称:同样可以随意填写，我们同样以”Localhost - Android”为例</p>
+<p>　　用户名:填写”配置文件设置”界面的”用户名”，默认为android</p>
+<p>　　密码:填写”配置文件设置”界面的设置的”用户密码”<br><img src="http://mlapp.b0.upaiyun.com/usr/uploads/2016/10/2116566192.png" alt="image"></p>
+<p>　　点击右上角的”√”图标保存并返回到”新建连接”界面，再次点击”√”图标保存，在”连接列表”中点击刚刚新建的这个项目连接到我们刚刚部署好的系统。</p>
+<p>　　因为我们是通过普通用户android登陆系统的，接下来我们需要设置超级用户(root)的密码并且以超级用户的身份登陆系统:</p>
+<p>　　在终端中键入:</p>
+<p>sudo passwd root</p>
+<p>　　终端将会提示用户输入root用户的密码并且再次输入一次以确认(输入密码时密码将不可见，连*都不会显示)，设置完毕后，在终端键入命令su并输入刚刚设置好的root用户密码即可切换到root用户。<br>　　在Linux Deploy中启动部署好的系统，以普通用户方式登录到SSH并使用su命令切换到超级用户，在终端中执行:</p>
+<p>apt-get install -y vim #安装vim编辑器</p>
+<p>　　当然啦，使用系统自带的vi编辑器也是可以的，如果你对vi编辑器比较熟悉也可以使用vi编辑器编辑文件。vim编辑器安装完成后我们继续在终端执行:</p>
+<p>vim /etc/ssh/sshd_config #使用vim编辑器打开/etc/ssh/sshd_config这个文件</p>
+<p>　　打开文件后，键入i进入编辑模式，点击终端任意位置可以弹出特殊键键盘，使用上下光标滚动浏览文件，在文件的#Authentication部分找到PermitRootLogin这一项，将其改为yes，改动完成后点击特殊键键盘中的”ESC”键退出编辑模式，键盘键入:wq!保存并强制退出文件完成对文件的编辑操作。<br>　　当然，修改完sshd_config文件，停止并启动Linux系统后，你也可以直接以root用户连接到SSH了（如果想要快速连接，点击右上方的”闪电” 然后填root@127.0.0.1，连接的密码就是你自己设置的root密码）<br>　　如果你在前面安装了图形界面，那么你还需要下载VNC（百度一下）这个软件，然后点击主界面的”+”<br>填127.0.0.1:5900密码是一开始是设置的android的密码，如果出错的话，请在ssh连接后输入vncserver<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">root@localhost:/home/android# vncserver</div><div class="line"></div><div class="line">New &apos;X&apos; desktop is localhost:6</div><div class="line"></div><div class="line">Starting applications specified in /root/.vnc/xstartup</div><div class="line">Log file is /root/.vnc/localhost:6.log</div><div class="line"></div><div class="line">root@localhost:/home/android#</div></pre></td></tr></table></figure></p>
+<p>记住New ‘X’ desktop is localhost:6的数字，我这里是6，然后再进入vnc里面把地址改为127.0.0.1:5906<br>590后面的数字根据你手机出现的数字改动一下，再次连接就可以进入图形界面了。
+　　</p>
+<p>然后，在Android上安装kali就完成了。</p>
+<p> <strong> <del>参考</del>  </strong> </p>
+<p><a href="http://blog.mlapp.cn/134.html" target="_blank" rel="external">Linux Deploy:在Android上部署Linux</a><br>by 美丽应用</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/android/" rel="tag"># android</a>
+          
+            <a href="/tags/kali/" rel="tag"># kali</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/29/我的博客终于建成了/" rel="next" title="我的博客终于建成了">
+                <i class="fa fa-chevron-left"></i> 我的博客终于建成了
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/30/用Android手机+github+hexo建博客/" rel="prev" title="用android手机+github+hexo建博客">
+                用android手机+github+hexo建博客 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="jam" />
+          <p class="site-author-name" itemprop="name">jam</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jam</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("xa0LXvVurHoUpQUw7S1vvMF7-gzGzoHsz", "6vaIXjXi437HM7Ejyh3DyVAs");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+
+</body>
+</html>
