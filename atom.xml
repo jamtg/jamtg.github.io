@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://blog.wosiwozai.cn/"/>
   <updated>2017-03-18T11:13:05.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://blog.wosiwozai.cn/</id>
   
   <author>
     <name>jam</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>在Android手机上安装kali(2)</title>
-    <link href="http://yoursite.com/2017/01/08/%E5%9C%A8Android%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85kali(2)/"/>
-    <id>http://yoursite.com/2017/01/08/在Android手机上安装kali(2)/</id>
+    <link href="http://blog.wosiwozai.cn/2017/01/08/%E5%9C%A8Android%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85kali(2)/"/>
+    <id>http://blog.wosiwozai.cn/2017/01/08/在Android手机上安装kali(2)/</id>
     <published>2017-01-08T13:45:30.000Z</published>
     <updated>2017-03-18T11:13:05.000Z</updated>
     
@@ -54,19 +54,19 @@
     
     </summary>
     
-      <category term="android安装kali" scheme="http://yoursite.com/categories/android%E5%AE%89%E8%A3%85kali/"/>
+      <category term="android安装kali" scheme="http://blog.wosiwozai.cn/categories/android%E5%AE%89%E8%A3%85kali/"/>
     
     
-      <category term="android" scheme="http://yoursite.com/tags/android/"/>
+      <category term="android" scheme="http://blog.wosiwozai.cn/tags/android/"/>
     
-      <category term="kali" scheme="http://yoursite.com/tags/kali/"/>
+      <category term="kali" scheme="http://blog.wosiwozai.cn/tags/kali/"/>
     
   </entry>
   
   <entry>
     <title>用android手机+github+hexo建博客</title>
-    <link href="http://yoursite.com/2016/12/30/%E7%94%A8Android%E6%89%8B%E6%9C%BA+github+hexo%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2016/12/30/用Android手机+github+hexo建博客/</id>
+    <link href="http://blog.wosiwozai.cn/2016/12/30/%E7%94%A8Android%E6%89%8B%E6%9C%BA+github+hexo%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://blog.wosiwozai.cn/2016/12/30/用Android手机+github+hexo建博客/</id>
     <published>2016-12-30T04:53:37.000Z</published>
     <updated>2017-03-18T11:13:05.000Z</updated>
     
@@ -98,14 +98,14 @@
     </summary>
     
     
-      <category term="android建博客" scheme="http://yoursite.com/tags/android%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+      <category term="android建博客" scheme="http://blog.wosiwozai.cn/tags/android%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>在Android手机上安装kali</title>
-    <link href="http://yoursite.com/2016/12/29/%E5%9C%A8Android%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85kali/"/>
-    <id>http://yoursite.com/2016/12/29/在Android手机上安装kali/</id>
+    <link href="http://blog.wosiwozai.cn/2016/12/29/%E5%9C%A8Android%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85kali/"/>
+    <id>http://blog.wosiwozai.cn/2016/12/29/在Android手机上安装kali/</id>
     <published>2016-12-29T07:28:30.000Z</published>
     <updated>2017-03-18T11:13:05.000Z</updated>
     
@@ -188,19 +188,19 @@
     
     </summary>
     
-      <category term="android安装kali" scheme="http://yoursite.com/categories/android%E5%AE%89%E8%A3%85kali/"/>
+      <category term="android安装kali" scheme="http://blog.wosiwozai.cn/categories/android%E5%AE%89%E8%A3%85kali/"/>
     
     
-      <category term="android" scheme="http://yoursite.com/tags/android/"/>
+      <category term="android" scheme="http://blog.wosiwozai.cn/tags/android/"/>
     
-      <category term="kali" scheme="http://yoursite.com/tags/kali/"/>
+      <category term="kali" scheme="http://blog.wosiwozai.cn/tags/kali/"/>
     
   </entry>
   
   <entry>
     <title>我的博客终于建成了</title>
-    <link href="http://yoursite.com/2016/12/29/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BB%88%E4%BA%8E%E5%BB%BA%E6%88%90%E4%BA%86/"/>
-    <id>http://yoursite.com/2016/12/29/我的博客终于建成了/</id>
+    <link href="http://blog.wosiwozai.cn/2016/12/29/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BB%88%E4%BA%8E%E5%BB%BA%E6%88%90%E4%BA%86/"/>
+    <id>http://blog.wosiwozai.cn/2016/12/29/我的博客终于建成了/</id>
     <published>2016-12-29T04:06:20.000Z</published>
     <updated>2017-03-18T11:13:05.000Z</updated>
     
