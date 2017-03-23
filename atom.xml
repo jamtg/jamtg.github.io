@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.wosiwozai.cn/"/>
-  <updated>2017-03-18T11:13:05.000Z</updated>
+  <updated>2017-03-23T09:23:34.883Z</updated>
   <id>http://blog.wosiwozai.cn/</id>
   
   <author>
@@ -16,13 +16,162 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>hexo博客常用插件和参数设置</title>
+    <link href="http://blog.wosiwozai.cn/2017/03/19/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%8F%92%E4%BB%B6%E5%92%8C%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://blog.wosiwozai.cn/2017/03/19/hexo博客的插件和参数设置/</id>
+    <published>2017-03-19T13:40:30.000Z</published>
+    <updated>2017-03-23T09:23:34.883Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><blockquote>
+<p>其实呢已经有很多hexo和GitHub建博客的教程了，这篇文章算是自己的笔记。  </p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="#安装"></a>#安装</h1><p>参考以下的文章<br><a href="https://my.oschina.net/ryaneLee/blog/638440" target="_blank" rel="external">小白独立搭建博客–Github Pages和Hexo简明教程</a><br><em><a href="https://hexo.io" target="_blank" rel="external">hexo</a></em>  </p>
+</blockquote>
+<h1 id="插件"><a href="#插件" class="headerlink" title="#插件"></a>#插件</h1><p> <a href="https://github.com/hexojs/hexo/wiki/Plugins" target="_blank" rel="external">hexo插件安装说明和列表</a><br> 如果是扩展插件，后面要加上 <strong>–save</strong>，表示依赖项。</p>
+<h2 id="RSS订阅插件"><a href="#RSS订阅插件" class="headerlink" title="##RSS订阅插件"></a>##RSS订阅插件</h2><p><strong> hexo-generator-feed：生成rss订阅文件</strong>     </p>
+<blockquote>
+<p>npm install hexo-generator-feed –save</p>
+</blockquote>
+<p> 在 Hexo 根目录下的 _config.yml 里添加配置信息</p>
+<pre><code>#sitemap
+sitemap:
+  path: sitemap.xml
+</code></pre><h2 id="SiteMap插件"><a href="#SiteMap插件" class="headerlink" title="##SiteMap插件"></a>##SiteMap插件</h2><p> hexo-generator-sitemap：生成易于搜索引擎搜素的网站地图</p>
+<blockquote>
+<p>npm install hexo-generator-sitemap –save</p>
+</blockquote>
+<p> 添加配置信息：</p>
+<pre><code>#feed
+atom:
+  type: atom
+  path: atom.xml
+  limit: 20
+</code></pre><h2 id="百度sitemap"><a href="#百度sitemap" class="headerlink" title="##百度sitemap"></a>##百度sitemap</h2><blockquote>
+<p>npm install hexo-generator-baidu-sitemap –save</p>
+</blockquote>
+<p> 添加配置信息：</p>
+<pre><code>baidusitemap:
+           path: baidusitemap.xml
+</code></pre><h2 id="备份插件"><a href="#备份插件" class="headerlink" title="##备份插件"></a>##备份插件</h2><blockquote>
+<p>npm install hexo-git-backup –save</p>
+</blockquote>
+<p> 配置请看这里<br><a href="https://github.com/coneycode/hexo-git-backup" target="_blank" rel="external">hexo-git-backup</a>  </p>
+<p> 文章编辑插件</p>
+<pre><code>npm install --save hexo-admin-plugin
+</code></pre><p> 打开<a href="http://localhost:4000/admin/" target="_blank" rel="external">http://localhost:4000/admin/</a>就可以了  </p>
+<p> 站点内容搜索 </p>
+<blockquote>
+<p>npm install hexo-generator-search –save</p>
+</blockquote>
+<p> 配置   </p>
+<pre><code>search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+</code></pre><h1 id="配置文件说明"><a href="#配置文件说明" class="headerlink" title="#配置文件说明"></a>#配置文件说明</h1><p>网站配置文件是在根目录下的<strong>_config.yml文件，是yaml格式的。<br>所有的配置项后面的冒号（:）与值之间要有一个空格。</strong><br><a href="https://hexo.io/docs/configuration.html" target="_blank" rel="external">官方配置文件说明</a></p>
+<pre><code># Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site 网站信息
+title: 网站标题
+subtitle: 网站副标题
+description: 网站描述
+author: 网站作者名字
+language: #网站语言,默认是英语(en)
+timezone: #网站时区
+
+# URL 网站设置
+## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;
+url: seayxu.github.io #网站的地址
+root: / #网站的根目录，如果是子文件夹下，则填写子文件夹路径
+permalink: :year/:month/:day/:title/ #文章链接地址格式 
+permalink_defaults: 
+
+# Directory 目录设置
+source_dir: source #资源文件夹，默认是source
+public_dir: public #公共文件夹，默认是public
+tag_dir: tags #标签文件夹，默认是tags
+archive_dir: archives #档案文件夹，默认是archives
+category_dir: categories #分类文件夹，默认是categories
+code_dir: downloads/code #代码文件夹，默认是downloads/code
+i18n_dir: :lang #国际化文件夹，默认跟language相同
+skip_render: [] #不需要渲染的文件夹或文件夹,放在[]中
+
+# Writing 文章写作选项
+new_post_name: :title.md # File name of new posts
+default_layout: post #默认布局模板
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight: #高亮显示
+  enable: true #默认开启
+  line_number: true #显示行号，默认开启
+  auto_detect: false
+  tab_replace:
+
+# Category &amp; Tag 分类和标签
+default_category: uncategorized #默认分类名称
+category_map:
+tag_map:
+
+# Date / Time format #日期/时间格式
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD #日期格式
+time_format: HH:mm:ss #时间格式
+
+# Pagination #分页信息
+## Set per_page to 0 to disable pagination
+per_page: 10 #每页显示数量，设置为0表示不启用分页
+pagination_dir: page #分页文件夹名称
+
+# Extensions 扩展
+## Plugins: https://hexo.io/plugins/ #插件
+plugins:
+  hexo-generator-feed #RSS订阅插件
+  hexo-generator-sitemap  #sitemap插件
+
+## Themes: https://hexo.io/themes/ #主题
+theme: landscape #主体名称
+
+# Deployment 部署
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@github.com:SeayXu/seayxu.github.io.git #github仓库地址
+  branch: master # github分支
+</code></pre><p> 参考以下的文章<br> <a href="http://www.jianshu.com/p/739bf1305e66" target="_blank" rel="external">使用Hexo搭建博客（四），博客的部件和插件</a><br> <a href="http://www.jianshu.com/p/35e197cb1273" target="_blank" rel="external">Hexo搭建Github-Pages博客填坑教程</a><br> <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">hexo</a><br> <a href="http://www.cnblogs.com/seayxu/p/5548243.html" target="_blank" rel="external">手把手教从零开始在GitHub上使用Hexo搭建博客教程(二)-Hexo参数设置</a><br> <a href="http://kuailelai.com/2015/01/06/Ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85hexo/" target="_blank" rel="external">Ubuntu上安装hexo</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;blockquote&gt;
+&lt;p&gt;其实呢已经有很多hexo和GitHub建博客的教程了，这篇文章算是自己的笔记。  &lt;/p&gt;
+&lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; cl
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://blog.wosiwozai.cn/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://blog.wosiwozai.cn/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>在Android手机上安装kali(2)</title>
     <link href="http://blog.wosiwozai.cn/2017/01/08/%E5%9C%A8Android%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85kali(2)/"/>
     <id>http://blog.wosiwozai.cn/2017/01/08/在Android手机上安装kali(2)/</id>
     <published>2017-01-08T13:45:30.000Z</published>
     <updated>2017-03-18T11:13:05.000Z</updated>
     
-    <content type="html"><![CDATA[<blockquote>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><blockquote>
 <p>联网安装kali的话可能要等很长时间，也可以先下载kali的镜像文件，然后安装。</p>
 </blockquote>
 <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="首先需要下面的软件"><a href="#首先需要下面的软件" class="headerlink" title="首先需要下面的软件:"></a>首先需要下面的软件:</h2><ul>
@@ -47,10 +196,10 @@
     
     <summary type="html">
     
-      &lt;blockquote&gt;
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;联网安装kali的话可能要等很长时间，也可以先下载kali的镜像文件，然后安装。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a
+&lt;h1 id=&quot;准备工作&quot;&gt;&lt;
     
     </summary>
     
@@ -70,7 +219,7 @@
     <published>2016-12-30T04:53:37.000Z</published>
     <updated>2017-03-18T11:13:05.000Z</updated>
     
-    <content type="html"><![CDATA[<p>#前言<br>在网上有许多用github+hexo建博客的文章，但是都需要在Windows/Mac/Linux下来完成，那么能不能只用一个Android手机来建自己的博客呢？</p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>#前言<br>在网上有许多用github+hexo建博客的文章，但是都需要在Windows/Mac/Linux下来完成，那么能不能只用一个Android手机来建自己的博客呢？</p>
 <p>答案是肯定的。</p>
 <p>#想法</p>
 <ul>
@@ -89,11 +238,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;#前言&lt;br&gt;在网上有许多用github+hexo建博客的文章，但是都需要在Windows/Mac/Linux下来完成，那么能不能只用一个Android手机来建自己的博客呢？&lt;/p&gt;
-&lt;p&gt;答案是肯定的。&lt;/p&gt;
-&lt;p&gt;#想法&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;在Android上安
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;#前言&lt;br&gt;在网上有许多用github+hexo建博客的文章，但是都需要在Windows/Mac/Linux下来完成，那么能不能只用一个Android手机来建自己的博客呢？
     
     </summary>
     
@@ -109,7 +254,7 @@
     <published>2016-12-29T07:28:30.000Z</published>
     <updated>2017-03-18T11:13:05.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>2016年陆续发行了kali 2.0和kali rolling 等最新的kali版本，那么手机怎样安装最新版的kali2.0和kalirolling呢？</p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>2016年陆续发行了kali 2.0和kali rolling 等最新的kali版本，那么手机怎样安装最新版的kali2.0和kalirolling呢？</p>
 <p>#让我们开始吧<br>在Android上安装kali Linux系统只需要几步</p>
 <ol>
 <li>root你的手机</li>
@@ -174,7 +319,8 @@
 <p>apt-get install -y vim #安装vim编辑器</p>
 <p>　　当然啦，使用系统自带的vi编辑器也是可以的，如果你对vi编辑器比较熟悉也可以使用vi编辑器编辑文件。vim编辑器安装完成后我们继续在终端执行:</p>
 <p>vim /etc/ssh/sshd_config #使用vim编辑器打开/etc/ssh/sshd_config这个文件</p>
-<p>　　打开文件后，键入i进入编辑模式，点击终端任意位置可以弹出特殊键键盘，使用上下光标滚动浏览文件，在文件的#Authentication部分找到PermitRootLogin这一项，将其改为yes，改动完成后点击特殊键键盘中的”ESC”键退出编辑模式，键盘键入:wq!保存并强制退出文件完成对文件的编辑操作。<br>　　当然，修改完sshd_config文件，停止并启动Linux系统后，你也可以直接以root用户连接到SSH了（如果想要快速连接，点击右上方的”闪电” 然后填root@127.0.0.1，连接的密码就是你自己设置的root密码）<br>　　如果你在前面安装了图形界面，那么你还需要下载VNC（百度一下）这个软件，然后点击主界面的”+”<br>填127.0.0.1:5900密码是一开始是设置的android的密码，如果出错的话，请在ssh连接后输入vncserver<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">root@localhost:/home/android# vncserver</div><div class="line"></div><div class="line">New &apos;X&apos; desktop is localhost:6</div><div class="line"></div><div class="line">Starting applications specified in /root/.vnc/xstartup</div><div class="line">Log file is /root/.vnc/localhost:6.log</div><div class="line"></div><div class="line">root@localhost:/home/android#</div></pre></td></tr></table></figure></p>
+<p>　　打开文件后，键入i进入编辑模式，点击终端任意位置可以弹出特殊键键盘，使用上下光标滚动浏览文件，在文件的#Authentication部分找到PermitRootLogin这一项，将其改为yes，改动完成后点击特殊键键盘中的”ESC”键退出编辑模式，键盘键入:wq!保存并强制退出文件完成对文件的编辑操作。<br>　　当然，修改完sshd_config文件，停止并启动Linux系统后，你也可以直接以root用户连接到SSH了（如果想要快速连接，点击右上方的”闪电” 然后填root@127.0.0.1，连接的密码就是你自己设置的root密码）<br>　　如果你在前面安装了图形界面，那么你还需要下载VNC（百度一下）这个软件，然后点击主界面的”+”<br>填127.0.0.1:5900密码是一开始是设置的android的密码，如果出错的话，请在ssh连接后输入vncserver</p>
+<p></p><p class="code-caption" data-lang="" data-line_number="frontend" data-trim_indent="backend" data-label_position="outer" data-labels_left="Code" data-labels_right=":" data-labels_copy="Copy Code"><span class="code-caption-label"></span><a class="code-caption-copy">Copy Code</a></p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">root@localhost:/home/android# vncserver</div><div class="line"></div><div class="line">New &apos;X&apos; desktop is localhost:6</div><div class="line"></div><div class="line">Starting applications specified in /root/.vnc/xstartup</div><div class="line">Log file is /root/.vnc/localhost:6.log</div><div class="line"></div><div class="line">root@localhost:/home/android#</div></pre></td></tr></table></figure><p></p>
 <p>记住New ‘X’ desktop is localhost:6的数字，我这里是6，然后再进入vnc里面把地址改为127.0.0.1:5906<br>590后面的数字根据你手机出现的数字改动一下，再次连接就可以进入图形界面了。
 　　</p>
 <p>然后，在Android上安装kali就完成了。</p>
@@ -184,7 +330,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;2016年陆续发行了kali 2.0和kali rolling 等最新的kali版本，那么手机怎样安装最新版的kali2.0和kalirol
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;2016年陆续发行了kali 2.0和k
     
     </summary>
     
@@ -204,14 +350,14 @@
     <published>2016-12-29T04:06:20.000Z</published>
     <updated>2017-03-18T11:13:05.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="在我废寝忘食，日夜折腾之后，我的博客终于建成了。"><a href="#在我废寝忘食，日夜折腾之后，我的博客终于建成了。" class="headerlink" title="在我废寝忘食，日夜折腾之后，我的博客终于建成了。"></a>在我废寝忘食，日夜折腾之后，我的博客终于建成了。</h1><p>作为一个小白，我看了一篇又一篇的hexo+github建博客的教程，直到昨天夜里两三点的时候才大概完成，虽然网上有很多的教程，但是实际做起来还是有一定的困难。</p>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="在我废寝忘食，日夜折腾之后，我的博客终于建成了。"><a href="#在我废寝忘食，日夜折腾之后，我的博客终于建成了。" class="headerlink" title="在我废寝忘食，日夜折腾之后，我的博客终于建成了。"></a>在我废寝忘食，日夜折腾之后，我的博客终于建成了。</h1><p>作为一个小白，我看了一篇又一篇的hexo+github建博客的教程，直到昨天夜里两三点的时候才大概完成，虽然网上有很多的教程，但是实际做起来还是有一定的困难。</p>
 <p>可是我一时之间还不知道要写些什么东西，写一些技术类的文章吗？感觉不行，自己好像就不会什么技术，写日常感想吗？好像也不行，日常感想写日记里就好了啊，嗯。。。到底写什么好呢，比如就写杂记吧，杂记的话就不用分的很清楚了，哈哈哈。</p>
 <p>好不容易啊，快看一下效果吧。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;在我废寝忘食，日夜折腾之后，我的博客终于建成了。&quot;&gt;&lt;a href=&quot;#在我废寝忘食，日夜折腾之后，我的博客终于建成了。&quot; class=&quot;headerlink&quot; title=&quot;在我废寝忘食，日夜折腾之后，我的博客终于建成了。&quot;&gt;&lt;/a&gt;在我废寝忘食，日夜折腾之后，
+      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;在我废寝忘食，日夜折腾之后，我的博客终于建成了。&quot;&gt;&lt;a href=&quot;#在我废寝忘食，日夜折腾之后，我的博客终于建成了。&quot; class=&quot;headerlink&quot; t
     
     </summary>
     
