@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.wosiwozai.cn/"/>
-  <updated>2017-03-23T09:23:34.883Z</updated>
+  <updated>2017-03-23T10:33:28.388Z</updated>
   <id>http://blog.wosiwozai.cn/</id>
   
   <author>
@@ -16,13 +16,53 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>在hexo博客中加入音乐</title>
+    <link href="http://blog.wosiwozai.cn/2017/03/23/%E5%9C%A8hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%8A%A0%E5%85%A5%E9%9F%B3%E4%B9%90/"/>
+    <id>http://blog.wosiwozai.cn/2017/03/23/在hexo博客中加入音乐/</id>
+    <published>2017-03-23T10:16:30.000Z</published>
+    <updated>2017-03-23T10:33:28.388Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>有一次打开了一个人的博客后突然响起了音乐，作为一个正在学习建立自己博客的小白，我很好奇这是怎么实现的，当然，显然我说的“怎么实现”并不是源码怎么写的，而是在想：他安装了什么插件，经过一番搜索，我找到了下面这个页面：</p>
+</blockquote>
+<p><a href="https://www.zhihu.com/question/30911258" target="_blank" rel="external">hexo音乐插件有吗？或者说hexo上有什么好玩的插件？</a><br>    其实我看了一些介绍之后，<br>觉得直接插入 iframe 标签比较简单。<br><strong>像这样</strong>  </p>
+<p></p><p class="code-caption" data-lang="" data-line_number="frontend" data-trim_indent="backend" data-label_position="outer" data-labels_left="Code" data-labels_right=":" data-labels_copy="Copy Code"><span class="code-caption-label"></span><a class="code-caption-copy">Copy Code</a></p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=20744792&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;</div></pre></td></tr></table></figure><p></p>
+<p>效果是这样的：  </p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=20744792&auto=1&height=66"></iframe>  
+
+
+
+
+
+
+
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;有一次打开了一个人的博客后突然响起了音乐，作为一个正在学习建立自己博客的小白，我很好奇这是怎么实现的，当然，显然我说的“怎么实现”并不是源码怎么写的，而是在想：他安装了什么插件，经过一番搜索，我找到了下面这个页面：&lt;/p&gt;
+&lt;/blockquote
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://blog.wosiwozai.cn/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://blog.wosiwozai.cn/tags/hexo/"/>
+    
+      <category term="博客" scheme="http://blog.wosiwozai.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo博客常用插件和参数设置</title>
     <link href="http://blog.wosiwozai.cn/2017/03/19/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%8F%92%E4%BB%B6%E5%92%8C%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE/"/>
     <id>http://blog.wosiwozai.cn/2017/03/19/hexo博客的插件和参数设置/</id>
     <published>2017-03-19T13:40:30.000Z</published>
     <updated>2017-03-23T09:23:34.883Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><blockquote>
+    <content type="html"><![CDATA[<blockquote>
 <p>其实呢已经有很多hexo和GitHub建博客的教程了，这篇文章算是自己的笔记。  </p>
 <h1 id="安装"><a href="#安装" class="headerlink" title="#安装"></a>#安装</h1><p>参考以下的文章<br><a href="https://my.oschina.net/ryaneLee/blog/638440" target="_blank" rel="external">小白独立搭建博客–Github Pages和Hexo简明教程</a><br><em><a href="https://hexo.io" target="_blank" rel="external">hexo</a></em>  </p>
 </blockquote>
@@ -151,9 +191,9 @@ deploy:
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;p&gt;其实呢已经有很多hexo和GitHub建博客的教程了，这篇文章算是自己的笔记。  &lt;/p&gt;
-&lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; cl
+&lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;#安装&quot;&gt;&lt;/a&gt;#安装&lt;/h1&gt;&lt;p&gt;参考以下的文
     
     </summary>
     
@@ -171,7 +211,7 @@ deploy:
     <published>2017-01-08T13:45:30.000Z</published>
     <updated>2017-03-18T11:13:05.000Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><blockquote>
+    <content type="html"><![CDATA[<blockquote>
 <p>联网安装kali的话可能要等很长时间，也可以先下载kali的镜像文件，然后安装。</p>
 </blockquote>
 <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="首先需要下面的软件"><a href="#首先需要下面的软件" class="headerlink" title="首先需要下面的软件:"></a>首先需要下面的软件:</h2><ul>
@@ -196,10 +236,10 @@ deploy:
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;p&gt;联网安装kali的话可能要等很长时间，也可以先下载kali的镜像文件，然后安装。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;准备工作&quot;&gt;&lt;
+&lt;h1 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a
     
     </summary>
     
@@ -219,7 +259,7 @@ deploy:
     <published>2016-12-30T04:53:37.000Z</published>
     <updated>2017-03-18T11:13:05.000Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>#前言<br>在网上有许多用github+hexo建博客的文章，但是都需要在Windows/Mac/Linux下来完成，那么能不能只用一个Android手机来建自己的博客呢？</p>
+    <content type="html"><![CDATA[<p>#前言<br>在网上有许多用github+hexo建博客的文章，但是都需要在Windows/Mac/Linux下来完成，那么能不能只用一个Android手机来建自己的博客呢？</p>
 <p>答案是肯定的。</p>
 <p>#想法</p>
 <ul>
@@ -238,7 +278,11 @@ deploy:
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;#前言&lt;br&gt;在网上有许多用github+hexo建博客的文章，但是都需要在Windows/Mac/Linux下来完成，那么能不能只用一个Android手机来建自己的博客呢？
+      &lt;p&gt;#前言&lt;br&gt;在网上有许多用github+hexo建博客的文章，但是都需要在Windows/Mac/Linux下来完成，那么能不能只用一个Android手机来建自己的博客呢？&lt;/p&gt;
+&lt;p&gt;答案是肯定的。&lt;/p&gt;
+&lt;p&gt;#想法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在Android上安
     
     </summary>
     
@@ -254,7 +298,7 @@ deploy:
     <published>2016-12-29T07:28:30.000Z</published>
     <updated>2017-03-18T11:13:05.000Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>2016年陆续发行了kali 2.0和kali rolling 等最新的kali版本，那么手机怎样安装最新版的kali2.0和kalirolling呢？</p>
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>2016年陆续发行了kali 2.0和kali rolling 等最新的kali版本，那么手机怎样安装最新版的kali2.0和kalirolling呢？</p>
 <p>#让我们开始吧<br>在Android上安装kali Linux系统只需要几步</p>
 <ol>
 <li>root你的手机</li>
@@ -330,7 +374,7 @@ deploy:
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;2016年陆续发行了kali 2.0和k
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;2016年陆续发行了kali 2.0和kali rolling 等最新的kali版本，那么手机怎样安装最新版的kali2.0和kalirol
     
     </summary>
     
@@ -350,14 +394,14 @@ deploy:
     <published>2016-12-29T04:06:20.000Z</published>
     <updated>2017-03-18T11:13:05.000Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h1 id="在我废寝忘食，日夜折腾之后，我的博客终于建成了。"><a href="#在我废寝忘食，日夜折腾之后，我的博客终于建成了。" class="headerlink" title="在我废寝忘食，日夜折腾之后，我的博客终于建成了。"></a>在我废寝忘食，日夜折腾之后，我的博客终于建成了。</h1><p>作为一个小白，我看了一篇又一篇的hexo+github建博客的教程，直到昨天夜里两三点的时候才大概完成，虽然网上有很多的教程，但是实际做起来还是有一定的困难。</p>
+    <content type="html"><![CDATA[<h1 id="在我废寝忘食，日夜折腾之后，我的博客终于建成了。"><a href="#在我废寝忘食，日夜折腾之后，我的博客终于建成了。" class="headerlink" title="在我废寝忘食，日夜折腾之后，我的博客终于建成了。"></a>在我废寝忘食，日夜折腾之后，我的博客终于建成了。</h1><p>作为一个小白，我看了一篇又一篇的hexo+github建博客的教程，直到昨天夜里两三点的时候才大概完成，虽然网上有很多的教程，但是实际做起来还是有一定的困难。</p>
 <p>可是我一时之间还不知道要写些什么东西，写一些技术类的文章吗？感觉不行，自己好像就不会什么技术，写日常感想吗？好像也不行，日常感想写日记里就好了啊，嗯。。。到底写什么好呢，比如就写杂记吧，杂记的话就不用分的很清楚了，哈哈哈。</p>
 <p>好不容易啊，快看一下效果吧。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;在我废寝忘食，日夜折腾之后，我的博客终于建成了。&quot;&gt;&lt;a href=&quot;#在我废寝忘食，日夜折腾之后，我的博客终于建成了。&quot; class=&quot;headerlink&quot; t
+      &lt;h1 id=&quot;在我废寝忘食，日夜折腾之后，我的博客终于建成了。&quot;&gt;&lt;a href=&quot;#在我废寝忘食，日夜折腾之后，我的博客终于建成了。&quot; class=&quot;headerlink&quot; title=&quot;在我废寝忘食，日夜折腾之后，我的博客终于建成了。&quot;&gt;&lt;/a&gt;在我废寝忘食，日夜折腾之后，
     
     </summary>
     
